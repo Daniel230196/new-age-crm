@@ -1,3 +1,13 @@
 controllers:
     resource: ../src/Controller/
     type: attribute
+test_route:
+    path: /api/test-route
+    controller: \App\Infrastructure\Http\ProfileController::test
+    methods: GET
+
+# User
+registration:
+    path: api/registration
+    controller: \App\Infrastructure\Http\RegistrationController::execute
+    methods: POST|OPTIONS
